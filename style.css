@@ -1,0 +1,252 @@
+* {
+    font-family: 'Font Awesome';
+    font-weight: bold;
+    font-size: 16px;
+    /* opacity: 0.9; */
+}
+
+.modules-left {
+    margin-left: 3px;
+}
+
+.modules-right {
+    margin-right: 3px;
+}
+
+
+window#waybar {
+    background: rgba(207, 14, 14, 0);
+    /* opacity: 1; */
+
+}
+
+/* "" */
+
+#cpu,
+#custom-nvidia,
+#temperature,
+#memory,
+#disk {
+    min-width: 60px;
+    /* min-width is uesd for fix length to prevent changing eg 9% to 10% */
+    border-radius: 10px;
+    color: #1adfc1;
+    padding: 0px 5px;
+    margin: 3px 1px;
+    background: #535391;
+    /* padding: 0px; */
+}
+
+#temperature {
+    color: #cba6f7;
+}
+
+#temperature.critical {
+    color: #b41c36;
+}
+
+
+#workspaces {
+    border-radius: 15px;
+    /* color: #a6e3a1; */
+    color: #1adfc1;
+    background: #343463;
+
+    opacity: 0.9;
+    /* padding: 0px 10px; */
+    /* margin: 3px 3px; */
+    /* border: 1px solid #181825; */
+    /* margin-right: 10px; */
+}
+
+#workspaces button {
+    padding: 0px 5px;
+    margin: 3px 3px;
+    border-radius: 30px;
+    color: antiquewhite;
+    transition: all 0.3s ease-in-out;
+    color: #4c7771;
+}
+
+#workspaces button.active {
+    color: #f35d76;
+    border-radius: 30px;
+    /* border: #ad196b; */
+    min-width: 40px;
+    opacity: 1.0;
+    /* transition: all 0.3s ease-in-out; */
+    transition: none;
+    border-top: 2px solid #ABE9B3;
+    border-bottom: 2px solid #ABE9B3;
+}
+
+#workspaces button:hover {
+    /* border-radius: 15px; */
+    border-top: 2px solid #ABE9B3;
+    border-bottom: 2px solid #ABE9B3;
+    opacity: 0.7;
+}
+
+
+#tooltip {
+    background: #2e3332;
+    border-radius: 10px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #000000;
+}
+
+
+#window {
+    color: #ffffff;
+    background: #505079;
+    /* opacity: 0.9; */
+    padding: 0px 10px;
+    margin: 1px 0px;
+    border: 1px solid #181825;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#clock.time {
+    background: #8888e2;
+    color: #ffffff;
+    padding: 0px 10px;
+    margin: 3px 1px;
+    /* opacity: 0.9; */
+    border-radius: 10px;
+}
+
+#clock.date {
+    background: #39d8b5;
+    color: #ffffff;
+    padding: 0px 10px;
+    margin: 3px 1px;
+    /* opacity: 0.9; */
+    border-radius: 10px;
+}
+
+#tray {
+    /* min-width: 200px; */
+    /* max-width: 200px; */
+    border-radius: 10px;
+    color: #1adfc1;
+    background: #343463;
+    opacity: 0.7;
+    padding: 0px 10px;
+    margin: 3px 1px;
+    /* border: 1px solid #181825; */
+}
+
+
+#network.speeddown,
+#network.speedup {
+    min-width: 80px;
+    /* min-width is uesd for fix length to prevent changing eg 9% to 10% */
+    border-radius: 10px;
+    color: #f9e2af;
+    padding: 0px 5px;
+    margin: 3px 1px;
+    background: #343463;
+    /* padding: 0px; */
+}
+
+#battery,
+#network.stat,
+#bluetooth {
+    background: #343463;
+    opacity: 0.9;
+    padding: 0px 10px;
+    margin: 3px 3px;
+    border: 1px solid #181825;
+}
+
+#network.stat {
+    color: #1adfc1;
+    background: #244469;
+    border-radius: 10px 0px 0px 10px;
+    margin-right: 10px;
+    padding: 0px 10px;
+    margin: 3px 0px;
+}
+
+#bluetooth {
+    color: #ffffff;
+    background: #619169;
+    border-radius: 0px 10px 10px 0px;
+    margin-right: 10px;
+    padding: 0px 10px;
+    margin: 3px 0px;
+    border-radius: 0px 10px 10px 0px;
+}
+
+#battery {
+    color: #55e048;
+    border-radius: 10px;
+    border-left: 0px;
+}
+
+/* // */
+
+#pulseaudio {
+    min-width: 40px;
+    color: #4eddc8;
+    background: #343463;
+    opacity: 0.9;
+    padding: 0px 10px 0px 10px;
+    margin: 3px 0px;
+    border-radius: 10px 0px 0px 10px;
+    margin: 3px 0px 3px 3px;
+}
+
+#pulseaudio.microphone {
+    color: #d0b6f0;
+    background: #404079;
+    opacity: 0.9;
+    /* padding: 0px 10px 0px 10px; */
+    padding: 0px 10px;
+    margin: 3px 3px 3px 0px;
+    border-radius: 0px 10px 10px 0px;
+}
+
+/*  */
+
+#custom-updates {
+    background: #8acaff;
+    min-width: 30px;
+    padding: 0px 10px;
+    margin: 3px;
+    border-radius: 10px;
+}
+
+#backlight-slider slider {
+    min-height: 0px;
+    min-width: 0px;
+    /* opacity: 0; */
+    background-image: none;
+    border: none;
+    box-shadow: none;
+}
+
+#backlight-slider trough {
+    /* min-height: 80px; */
+    min-width: 100px;
+    border-radius: 5px;
+    background-color: black;
+}
+
+#backlight-slider highlight {
+    min-width: 10px;
+    border-radius: 5px;
+    background-color: red;
+}
+
+#cava {
+    padding: 0 5px;
+    margin: 3px;
+    border-radius: 10px;
+    /* padding: 0 10px; */
+    background-color: #b9a284;
+    color: #5de7c9;
+}
