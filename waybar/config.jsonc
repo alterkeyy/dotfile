@@ -1,0 +1,49 @@
+{
+    "include": [
+        "~/.config/waybar/modules/module_left.jsonc",
+        "~/.config/waybar/modules/module_center.jsonc",
+        "~/.config/waybar/modules/module_right.jsonc"
+    ],
+    "layer": "top", // Waybar at top layer
+    "position": "top", // Waybar at the bottom of your screen
+    "mod": "dock",
+    "exclusive": true,
+    "passthrough": false,
+    "modules-left": [
+        "group/cpu_temp",
+        "custom/nvidia",
+        "memory",
+        "disk",
+        "group/speed",
+        "hyprland/workspaces",
+        "hyprland/window"
+    ],
+    "modules-center": [
+        "tray",
+        "clock#date",
+        "clock#time"
+        // "cava"
+    ],
+    "modules-right": [
+        // "hyprland/language",
+        // "mpris",
+        "cava",
+        "wireplumber",
+        // "pulseaudio",
+        // "pulseaudio#microphone",
+        // "backlight/slider",
+        "network#stat",
+        "bluetooth",
+        "custom/updates",
+        // "custom/brightnejss",
+        "battery"
+    ],
+    
+   
+    "hyprland/language": {
+        "format": "Lang: {}",
+        "format-en": "AMERICA, HELL YEAH!",
+        "format-tr": "As bayrakları",
+        "keyboard-name": "at-translated-set-2-keyboard"
+    }
+}
