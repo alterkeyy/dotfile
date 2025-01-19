@@ -17,24 +17,25 @@
         "group/speed",
         "hyprland/workspaces",
         "hyprland/window"
-        // "custom/brightnessddcutilddcutil",
-        // "custom/pipewire",
     ],
     "modules-center": [
+        "tray",
         "clock#date",
         "clock#time"
         // "cava"
     ],
     "modules-right": [
         // "hyprland/language",
-        "tray",
+        // "mpris",
         "cava",
-        "pulseaudio",
-        "pulseaudio#microphone",
+        "wireplumber",
+        // "pulseaudio",
+        // "pulseaudio#microphone",
         // "backlight/slider",
         "network#stat",
         "bluetooth",
         "custom/updates",
+        // "custom/brightnejss",
         "battery"
     ],
     

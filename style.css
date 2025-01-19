@@ -1,5 +1,5 @@
 * {
-    font-family: 'Font Awesome';
+    font-family: 'radio canada';
     font-weight: bold;
     font-size: 16px;
     /* opacity: 0.9; */
@@ -15,7 +15,7 @@
 
 
 window#waybar {
-    background: rgba(207, 14, 14, 0);
+    background: rgba(255, 255, 255, 0);
     /* opacity: 1; */
 
 }
@@ -109,16 +109,16 @@ window#waybar {
     margin-right: 10px;
 }
 
-#clock.time {
+#clock.date {
     background: #8888e2;
-    color: #ffffff;
+    color: #e7e7e7;
     padding: 0px 10px;
     margin: 3px 1px;
     /* opacity: 0.9; */
     border-radius: 10px;
 }
 
-#clock.date {
+#clock.time {
     background: #39d8b5;
     color: #ffffff;
     padding: 0px 10px;
@@ -132,7 +132,7 @@ window#waybar {
     /* max-width: 200px; */
     border-radius: 10px;
     color: #1adfc1;
-    background: #343463;
+    background: #825eb0;
     opacity: 0.7;
     padding: 0px 10px;
     margin: 3px 1px;
@@ -162,14 +162,6 @@ window#waybar {
     border: 1px solid #181825;
 }
 
-#network.stat {
-    color: #1adfc1;
-    background: #244469;
-    border-radius: 10px 0px 0px 10px;
-    margin-right: 10px;
-    padding: 0px 10px;
-    margin: 3px 0px;
-}
 
 #bluetooth {
     color: #ffffff;
@@ -181,6 +173,15 @@ window#waybar {
     border-radius: 0px 10px 10px 0px;
 }
 
+#network.stat {
+    color: #1adfc1;
+    background: #244469;
+    border-radius: 10px 0px 0px 10px;
+    margin-right: 10px;
+    padding: 0px 10px;
+    margin: 3px 0px;
+}
+
 #battery {
     color: #55e048;
     border-radius: 10px;
@@ -189,6 +190,52 @@ window#waybar {
 
 /* // */
 
+#wireplumber {
+    min-width: 50px;
+    color: #4eddc8;
+    background: #343463;
+    opacity: 0.9;
+    padding: 0px 10px 0px 10px;
+    margin: 3px 0px;
+    border-radius: 10px 10px 10px 10px;
+    margin: 3px 3px 3px 3px;
+}
+
+
+
+/*  */
+
+#custom-updates {
+    background: #8acaff;
+    min-width: 10px;
+    padding: 0px 10px;
+    margin: 3px;
+    border-radius: 10px;
+}
+
+#mpris {
+    /* background: #343463; */
+    color: #3f5142;
+    opacity: 0.9;
+    padding: 0px 0px;
+    margin: 3px 3px 3px 3px;
+    border-radius: 10px;
+}
+
+
+#cava {
+    padding: 0 5px;
+    margin: 3px 3px 3px 0px;
+    border-radius: 10px;
+    /* padding: 0 10px; */
+    /* background-color: #b9a284; */
+    color: #8888e2;
+    opacity: 0.8;
+}
+
+
+
+/* abadon */
 #pulseaudio {
     min-width: 40px;
     color: #4eddc8;
@@ -210,25 +257,6 @@ window#waybar {
     border-radius: 0px 10px 10px 0px;
 }
 
-/*  */
-
-#custom-updates {
-    background: #8acaff;
-    min-width: 30px;
-    padding: 0px 10px;
-    margin: 3px;
-    border-radius: 10px;
-}
-
-#backlight-slider slider {
-    min-height: 0px;
-    min-width: 0px;
-    /* opacity: 0; */
-    background-image: none;
-    border: none;
-    box-shadow: none;
-}
-
 #backlight-slider trough {
     /* min-height: 80px; */
     min-width: 100px;
@@ -242,11 +270,11 @@ window#waybar {
     background-color: red;
 }
 
-#cava {
-    padding: 0 5px;
-    margin: 3px;
-    border-radius: 10px;
-    /* padding: 0 10px; */
-    background-color: #b9a284;
-    color: #5de7c9;
+#backlight-slider slider {
+    min-height: 0px;
+    min-width: 0px;
+    /* opacity: 0; */
+    background-image: none;
+    border: none;
+    box-shadow: none;
 }

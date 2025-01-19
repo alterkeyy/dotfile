@@ -2,7 +2,7 @@
     "hyprland/workspaces": {
         "disable-scroll": true,
         "on-scroll-up": "hyprctl dispatch workspace e-1",
-     "on-scroll-down": "hyprctl dispatch workspace e+1",
+        "on-scroll-down": "hyprctl dispatch workspace e+1",
         "all-outputs": true,
         "warp-on-scroll": true,
         "format": "{name}",
@@ -13,11 +13,11 @@
         }
     },
     "hyprland/window": {
-        "format": "👉 {class}",
+        "format": "👉  {class}",
         "rewrite": {
-            "(.*) — Microsoft-edge": "🌎 $1",
-            "(.*) - fish": "> [$1]",
-            "(.*) - kitty": " [$1]"
+            "(.*) - edge": "🌎 $1",
+            "(.*) - code": " $1",
+            "(.*) - zsh": " [$1]"
         },
         "separate-outputs": true
     },
@@ -50,13 +50,13 @@
     //gpu
     "custom/nvidia": {
         "exec": "nvidia-smi --query-gpu=utilization.gpu --format=csv,nounits,noheader | sed 's/\\([0-9]\\+\\)/ \\1%/g'",
-        "format": "G :{}",
+        "format": "G {}",
         "interval": 2
     },
     // Memory
     "memory": {
         "interval": 5,
-        "format": " {}% "
+        "format": "M {}% "
         // "on-click": "~/.config/ml4w/settings/system-monitor.sh"
     },
     // Harddisc space used
@@ -105,5 +105,5 @@
         // "tooltip-format-ethernet": "{ifname} ",
         // "tooltip-format-disconnected": "Disconnected",
         "max-length": 60
-    },
+    }
 }
